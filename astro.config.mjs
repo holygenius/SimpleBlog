@@ -5,4 +5,5 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [tailwind()],
   site: 'https://holygenius.github.io', // Your full domain, or GitHub Pages domain
+  base: '/SimpleBlog', // Your repository name, if it's a project page
 });
