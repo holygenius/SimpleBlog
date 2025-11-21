@@ -2,6 +2,8 @@ backend:
   name: github
   repo: holygenius/SimpleBlog
   branch: main # Branch to publish to
+  auth_client_id: sroYOkzme256tNxRFBHN0Leg4uk_qnQPVaIcGtgpFFc
+  auth_endpoint: https://api.netlify.com/auth
 
 media_folder: "public/uploads" # Folder where uploaded files will be stored
 public_folder: "/uploads" # The public path for uploaded files
