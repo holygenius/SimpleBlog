@@ -4,5 +4,6 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind()],
-  site: 'https://example.com', // Replace with your actual site URL
+  site: 'https://holygenius.github.io', // Your full domain, or GitHub Pages domain
+  base: '/SimpleBlog', // Your repository name, if it's a project page
 });
