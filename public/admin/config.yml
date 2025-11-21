@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: your-username/your-repo-name # Replace with your GitHub username and repository name
+  repo: holygenius/SimpleBlog
   branch: main # Branch to publish to
   base_url: https://github.com # Optional, defaults to https://github.com
   auth_endpoint: https://api.netlify.com/auth # For Netlify Identity or other custom authentication
