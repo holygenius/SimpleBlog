@@ -1,0 +1,21 @@
+backend:
+  name: github
+  repo: holygenius/SimpleBlog
+  branch: main # Branch to publish to
+  base_url: https://github.com # Optional, defaults to https://github.com
+  auth_endpoint: https://api.netlify.com/auth # For Netlify Identity or other custom authentication
+
+media_folder: "public/uploads" # Folder where uploaded files will be stored
+public_folder: "/uploads" # The public path for uploaded files
+
+collections:
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog Posts" # Used in the UI
+    folder: "src/content/blog" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template
+    fields: # The fields each document in this collection will have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
