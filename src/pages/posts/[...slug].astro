@@ -1,5 +1,11 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  // For now, we'll return an empty array.
+  // This will be replaced with logic to generate pages from your posts.
+  return [];
+}
 ---
 
 <BaseLayout title="The Art of Doing Nothing">
